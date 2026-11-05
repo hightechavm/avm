@@ -1,0 +1,19 @@
+:root { color-scheme: light dark; --bg: #fff; --fg: #1a1a1a; --muted: #5c5c5c; --brand: #1a1a1a; --line: #e5e5e5; }
+@media (prefers-color-scheme: dark) { :root { --bg: #121212; --fg: #f2f2f2; --muted: #b0b0b0; --brand: #f2f2f2; --line: #2c2c2c; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+header { background: var(--bg); padding: 14px 16px; text-align: center; border-bottom: 1px solid var(--line); }
+header img { display: block; margin: 0 auto; }
+@media (prefers-color-scheme: dark) { header img { filter: invert(1); mix-blend-mode: screen; } }
+main { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+h1 { font-size: 24px; margin: 0 0 8px; }
+h2 { font-size: 18px; margin: 28px 0 8px; color: var(--brand); }
+p, li { color: var(--fg); }
+.muted { color: var(--muted); font-size: 14px; }
+a { color: var(--brand); }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; padding: 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.table-wrap { overflow-x: auto; }
+/* 검토용 표시 — 게시 전 남아 있으면 안 된다 */
+.draft { background: #fff3cd; color: #664d03; padding: 12px 16px; border-radius: 8px; font-size: 14px; }
+mark.todo { background: #ffe08a; color: #3d2e00; padding: 0 4px; border-radius: 4px; }
